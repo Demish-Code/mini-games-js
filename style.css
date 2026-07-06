@@ -1,0 +1,136 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+/* Центрирует контент по горизонтали с макс. шириной 1200px */
+.content-center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.hero {
+  background-color: #E1FF8F;
+  background-image: url(./img/hero-decor.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto;
+}
+.hero__container {
+  padding-top: 196px;
+  padding-bottom: 156px;
+  padding-left: 120px;
+}
+.hero__title {
+  font-weight: 700;
+  font-size: 64px;
+  color: #202027;
+  margin-bottom: 24px;
+}
+.hero__text {
+  font-weight: 400;
+  font-size: 24px;
+  color: #202027;
+  margin-bottom: 48px;
+  max-width: 700px;
+}
+.hero__text-accent {
+  font-weight: 600;
+}
+.hero__button {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 24px;
+  color: #FFFFFF;
+  border-radius: 60px;
+  background-color: #202027;
+  padding: 16px 65px;
+  border: 1px solid transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+.hero__button:hover {
+  background-color: #FFFFFF;
+  color: #202027;
+  border: 1px solid #202027;
+}
+
+.games {
+  background-color: #202027;
+}
+.games__container {
+  padding-top: 94px;
+  padding-bottom: 144px;
+}
+.games__title {
+  font-weight: 700;
+  font-size: 64px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+.games__description {
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-bottom: 72px;
+}
+.games__list {
+  list-style: none;
+  -moz-columns: 3;
+       columns: 3;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+.games__item {
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  transition: transform 0.3s;
+  margin-bottom: 24px;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+.games__item:hover {
+  transform: scale(1.05);
+}
+.games__card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.games__card-image {
+  width: 100%;
+  display: block;
+}
+.games__card-info {
+  margin: 32px 32px 36px;
+}
+.games__card-number {
+  font-weight: 500;
+  font-size: 16px;
+  color: #202027;
+  background-color: #F7F7F7;
+  border-radius: 54px;
+  padding: 8px 16px 10px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.games__card-title {
+  font-weight: 700;
+  font-size: 32px;
+  color: #202027;
+}/*# sourceMappingURL=style.css.map */

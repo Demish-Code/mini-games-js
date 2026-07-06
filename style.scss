@@ -1,0 +1,146 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+/* Центрирует контент по горизонтали с макс. шириной 1200px */
+.content-center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.hero {
+    background-color: #E1FF8F;
+    background-image: url(./img/hero-decor.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto;
+    
+    &__container {
+        padding-top: 196px;
+        padding-bottom: 156px;
+        padding-left: 120px;
+    }
+    
+    &__title {
+        font-weight: 700;
+        font-size: 64px;
+        color: #202027;
+        margin-bottom: 24px;
+    }
+    
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        color: #202027;
+        margin-bottom: 48px;
+        max-width: 700px;
+        &-accent {
+            font-weight: 600;
+        }
+    }
+    
+    &__button {
+        text-decoration: none;
+        display: inline-block;
+        font-weight: 600;
+        font-size: 24px;
+        color: #FFFFFF;
+        border-radius: 60px;
+        background-color: #202027;
+        padding: 16px 65px;
+        border: 1px solid transparent;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+            background-color: #FFFFFF;
+            color: #202027;
+            border: 1px solid #202027;
+        }
+    }
+}
+
+.games {
+    background-color: #202027;
+
+    &__container {
+        padding-top: 94px;
+        padding-bottom: 144px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 64px;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 24px;
+        color: #FFFFFF;
+        margin-bottom: 72px;
+    }
+
+    &__list {
+        list-style: none;
+        columns: 3;
+        column-gap: 24px;
+
+    }
+
+    &__item {
+        border-radius: 30px;
+        background-color: #FFFFFF;
+        overflow: hidden;
+        transition: transform 0.3s;
+        margin-bottom: 24px;
+        break-inside: avoid;
+
+            &:hover {
+                transform: scale(1.05);
+        }
+    }
+
+    &__card {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+
+    }
+
+    &__card-image {
+        width: 100%;
+        display: block;
+    }
+
+    &__card-info {
+        margin: 32px 32px 36px;
+    }
+
+    &__card-number {
+        font-weight: 500;
+        font-size: 16px;
+        color: #202027;
+        background-color: #F7F7F7;
+        border-radius: 54px;
+        padding: 8px 16px 10px;
+        margin-bottom: 16px;
+        display: inline-block;
+    }
+
+    &__card-title {
+        font-weight: 700;
+        font-size: 32px;
+        color: #202027;
+    }
+}
