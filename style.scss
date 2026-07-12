@@ -144,3 +144,44 @@ button, input, select, textarea {
         color: #202027;
     }
 }
+
+@media (max-width: 640px) {
+    .hero {
+       background-image: none;
+
+    &__container {
+        padding-top: 147px;
+        padding-bottom: 182px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+    
+    &__title {
+        font-size: 40px;
+        max-width: 262px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 100%;
+    }
+    
+    &__text {
+        font-size: 16px;
+        max-width: 296px;
+        margin: 0 auto 36px;
+        text-align: center;
+        line-height: 100%;
+    }
+    
+    &__button {
+        font-size: 16px;
+        padding: 16px 28px;
+        width: 285px;
+    }
+}
+    
+    .games {
+        display: none;
+    }
+}
