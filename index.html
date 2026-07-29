@@ -12,6 +12,10 @@
   <body>
     <main>
       <section class="hero">
+        <img src="./img/hero-star-top1.svg" class="hero__star hero__star--top-1" alt="" />
+        <img src="./img/hero-star-top2.svg" class="hero__star hero__star--top-2" alt="" />
+        <img src="./img/hero-star-bottom1.svg" class="hero__star hero__star--bottom-1" alt="" />
+        <img src="./img/hero-star-bottom2.svg" class="hero__star hero__star--bottom-2" alt="" />
         <div class="hero__container">
           <h1 class="hero__title">
             Добро пожаловать
@@ -22,17 +26,23 @@
             Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай
             <span class="hero__text-accent">«Поехали!»</span>
             и
-            <span class="hero__text-accent">приступай</span>
-            .
+            <span class="hero__text-accent">приступай.</span>
           </p>
-          <a href="#games" class="hero__button">Поехали!</a>
+          <a href="#games" class="button">Поехали!</a>
         </div>
       </section>
 
       <section class="games" id="games">
+        <img src="./img/games-star-big.svg" class="games__star games__star--big" alt="" />
+        <img src="./img/games-star-1.svg" class="games__star games__star--small-1" alt="" />
+        <img src="./img/games-star-2.svg" class="games__star games__star--small-2" alt="" />
         <div class="games__container content-center">
           <h2 class="games__title">Об играх</h2>
-          <p class="games__description">В моей коллекции представлено 6 игр на разные темы.Игры несложные — в них может поиграть каждый. Все игры доступны для пользования.</p>
+          <p class="games__description">
+            В моей коллекции представлено 6 игр на разные темы. Игры несложные — в них может поиграть каждый.
+            <br />
+            Все игры доступны для пользования.
+          </p>
 
           <ul class="games__list">
             <li class="games__item">
@@ -48,6 +58,7 @@
             <li class="games__item">
               <a href="#game-4" class="games__card">
                 <img src="./img/game-4.svg" alt="Камень, ножницы, бумага" class="games__card-image" />
+                <img src="./img/fist.png" alt="" class="fist fist--games">
                 <div class="games__card-info">
                   <p class="games__card-number">Игра № 4</p>
                   <h3 class="games__card-title">
@@ -109,6 +120,88 @@
           </ul>
         </div>
       </section>
+
+      <section class="mini-games">
+        <img src="./img/mini-games-star-top1.svg" class="mini-games__star mini-games__star--top-1" alt="" />
+        <img src="./img/mini-games-star-top2.svg" class="mini-games__star mini-games__star--top-2" alt="" />
+        <img src="./img/mini-games-star-bottom1.svg" class="mini-games__star mini-games__star--bottom-1" alt="" />
+        <img src="./img/mini-games-star-bottom2.svg" class="mini-games__star mini-games__star--bottom-2" alt="" />
+        <div class="mini-games__container content-center">
+          <h2 class="mini-games__title">Мини-игры</h2>
+          <ul class="mini-games__list">
+            <li class="mini-games__item">
+              <article class="mini-games__card mini-games__card--reversed" id="game-1">
+                <img src="./img/mini-games-1.svg" alt="Угадай число" class="mini-games__image" />
+                <div class="mini-games__info">
+                  <h3 class="mini-games__card-title">Угадай число</h3>
+                  <p class="mini-games__description">Попробуй угадать случайное число от 1 до 100.</p>
+                  <a href="#" class="button">Играть!</a>
+                </div>
+              </article>
+            </li>
+
+            <li class="mini-games__item">
+              <article class="mini-games__card" id="game-2">
+                <img src="./img/mini-games-2.svg" alt="Простая арифметика" class="mini-games__image" />
+                <div class="mini-games__info">
+                  <h3 class="mini-games__card-title">Простая арифметика</h3>
+                  <p class="mini-games__description">Попробуй решить простые арифметические задачи.</p>
+                  <a href="#" class="button">Играть!</a>
+                </div>
+              </article>
+            </li>
+
+            <li class="mini-games__item">
+              <article class="mini-games__card mini-games__card--reversed" id="game-3">
+                <img src="./img/mini-games-3.svg" alt="Переверни текст" class="mini-games__image" />
+                <div class="mini-games__info">
+                  <h3 class="mini-games__card-title">Переверни текст</h3>
+                  <p class="mini-games__description">Попробуй ввести текст, который будет перевернут.</p>
+                  <a href="#" class="button">Играть!</a>
+                </div>
+              </article>
+            </li>
+
+            <li class="mini-games__item">
+              <article class="mini-games__card" id="game-4">
+                <img src="./img/mini-games-4.svg" alt="Камень, ножницы, бумага" class="mini-games__image" />
+                <img src="./img/fist.png" alt="" class="fist fist--mini-games">
+                <div class="mini-games__info">
+                  <h3 class="mini-games__card-title">Камень, ножницы, бумага</h3>
+                  <p class="mini-games__description">Сыграй в популярную игру против компьютера.</p>
+                  <a href="#" class="button">Играть!</a>
+                </div>
+              </article>
+            </li>
+
+            <li class="mini-games__item">
+              <article class="mini-games__card mini-games__card--reversed" id="game-5">
+                <img src="./img/mini-games-5.svg" alt="Простая викторина" class="mini-games__image" />
+                <div class="mini-games__info">
+                  <h3 class="mini-games__card-title">Простая викторина</h3>
+                  <p class="mini-games__description">Отвечай на вопросы викторины с вариантами ответов.</p>
+                  <a href="#" class="button">Играть!</a>
+                </div>
+              </article>
+            </li>
+
+            <li class="mini-games__item">
+              <article class="mini-games__card" id="game-6">
+                <img src="./img/mini-games-6.svg" alt="Генератор случайных цветов" class="mini-games__image" />
+                <div class="mini-games__info">
+                  <h3 class="mini-games__card-title">Генератор случайных цветов</h3>
+                  <p class="mini-games__description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                  <a href="#" class="button">Играть!</a>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">Все права защищены.</p>
+    </footer>
   </body>
 </html>
