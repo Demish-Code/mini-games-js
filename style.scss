@@ -339,4 +339,153 @@ button, input, select, textarea {
     .games {
         display: none;
     }
+
+    // Мобильный адаптив
+@media (max-width: 640px) {
+    .content-center {
+        padding-left: 16px;
+        padding-right: 16px;
+        }
+
+    .hero {
+        background-image: url(./img/hero-decor-mobile.svg);
+        background-position: right top;
+        background-size: 160px auto;
+        background-repeat: no-repeat;
+        
+        &__star {
+            position: absolute;
+
+            &--top-1 {
+                top: 97px;
+                left: 37px;
+                width: 35px;
+            }
+
+            &--top-2 {
+                top: 64px;
+                left: 91px;
+                width: 21px;
+            }
+
+            &--bottom-1 {
+                bottom: 125px;
+                left: 272px;
+                width: 18px;
+            }
+
+            &--bottom-2 {
+                bottom: 79px;
+                left: 304px;
+                width: 39px;
+            }
+        }
+
+    &__container {
+        padding-top: 147px;
+        padding-bottom: 182px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+    
+    &__title {
+        font-size: 40px;
+        max-width: 262px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 100%;
+    }
+    
+    &__text {
+        font-size: 16px;
+        max-width: 296px;
+        margin: 0 auto 36px;
+        text-align: center;
+        line-height: 100%;
+    }
+    
+    &__button {
+        font-size: 16px;
+        padding: 16px 28px;
+        width: 285px;
+    }
+}
+
+    .button {
+        display: block;
+        width: 285px;
+        padding: 12px 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+
+    
+    .games {
+        display: none;
+    }
+
+    .mini-games {
+        padding-top: 49px;
+        padding-bottom: 10px;
+
+        &__star {
+            display: none;
+        }
+
+        &__title {
+            font-size: 40px;
+            padding-bottom: 48px;
+
+        }
+
+        &__card {
+            flex-direction: column;  
+            height: auto;
+
+            &-title {
+                font-size: 32px;
+                margin-bottom: 16px;
+            }
+
+            &--reversed {
+                flex-direction: column;
+            }
+        }
+
+        &__image {
+            flex: none;
+            width: 100%;
+            height: 285px;
+            object-fit: cover
+
+        }
+
+        &__info {
+            flex: none;
+            padding: 32px;;
+
+        }
+
+        &__description {
+            font-size: 16px;
+            margin-bottom: 32px;
+        }
+    }
+    .fist--mini-games {
+        top: 80px;
+        left: 105px;
+        width: 130px
+    }
+
+    .footer {
+        padding: 40px 0;
+
+        &__copyright {
+            font-size: 16px;
+        }
+    }
+}
 }
