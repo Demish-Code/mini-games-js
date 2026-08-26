@@ -1,4 +1,5 @@
 // Массив вопросов и правильных ответов
+function playQuiz() {
 const quiz = [
     {
        question: "Какой цвет небо?",
@@ -45,3 +46,4 @@ for (let i = 0; i < quiz.length; i++) {
 }
 
 alert(`Игра окончена! Правильных ответов: ${score} из ${quiz.length}`);
+}

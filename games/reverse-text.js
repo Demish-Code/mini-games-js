@@ -14,5 +14,3 @@ function playReverseText() {
   const reversed = userText.split("").reverse().join("");
   alert(`Перевернутый текст:\n${reversed}`);
 }
-
-playReverseText();

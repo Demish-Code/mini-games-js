@@ -135,7 +135,7 @@
                 <div class="mini-games__info">
                   <h3 class="mini-games__card-title">Угадай число</h3>
                   <p class="mini-games__description">Попробуй угадать случайное число от 1 до 100.</p>
-                  <a href="./games/guess-number.html" class="button">Играть!</a>
+                  <button onclick="playGuessNumber()" class="button">Играть</button>
                 </div>
               </article>
             </li>
@@ -146,7 +146,7 @@
                 <div class="mini-games__info">
                   <h3 class="mini-games__card-title">Простая арифметика</h3>
                   <p class="mini-games__description">Попробуй решить простые арифметические задачи.</p>
-                  <a href="./games/arithmetic.html" class="button">Играть!</a>
+                  <button onclick="playArithmetic()" class="button">Играть</button>
                 </div>
               </article>
             </li>
@@ -157,7 +157,7 @@
                 <div class="mini-games__info">
                   <h3 class="mini-games__card-title">Переверни текст</h3>
                   <p class="mini-games__description">Попробуй ввести текст, который будет перевернут.</p>
-                  <a href="./games/reverse-text.html" class="button">Играть!</a>
+                  <button onclick="playReverseText()" class="button">Играть</button>
                 </div>
               </article>
             </li>
@@ -169,7 +169,7 @@
                 <div class="mini-games__info">
                   <h3 class="mini-games__card-title">Камень, ножницы, бумага</h3>
                   <p class="mini-games__description">Сыграй в популярную игру против компьютера.</p>
-                  <a href="#" class="button">Играть!</a>
+                  <button onclick="playRockPaperScissors()" class="button">Играть</button>
                 </div>
               </article>
             </li>
@@ -180,7 +180,7 @@
                 <div class="mini-games__info">
                   <h3 class="mini-games__card-title">Простая викторина</h3>
                   <p class="mini-games__description">Отвечай на вопросы викторины с вариантами ответов.</p>
-                  <a href="./games/quiz.html" class="button">Играть!</a>
+                  <button onclick="playQuiz()" class="button">Играть</button>
                 </div>
               </article>
             </li>
@@ -203,5 +203,10 @@
     <footer class="footer">
       <p class="footer__copyright">Все права защищены.</p>
     </footer>
+    <script src="./games/quiz.js"></script>
+    <script src="./games/guess-number.js"></script>
+    <script src="./games/arithmetic.js"></script>
+    <script src="./games/reverse-text.js"></script>
+    <script src="./games/rock-paper-scissors.js"></script>
   </body>
 </html>

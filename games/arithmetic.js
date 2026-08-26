@@ -32,5 +32,3 @@ function playArithmetic() {
     alert(`Ошибка! Правильный ответ: ${correctAnswer}`);
   }
 }
-
-playArithmetic();
