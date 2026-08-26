@@ -20,11 +20,28 @@ const quiz = [
 let score = 0;
 
 for (let i = 0; i < quiz.length; i++) {
-  const text = `${quiz[i].question}\n${quiz[i].options.join('\n')}`;    // Собираем текст вопросов
-  const userAnswer = prompt(text);                                      // Спрашиваем у пользователя 
-  if (Number(userAnswer) === quiz[i].correctAnswer) {                   // Сравниваем с правильным
-  score++;                                                              // Если правильно то + к счету
-}
+  const text = `${quiz[i].question}\n${quiz[i].options.join('\n')}`;
+  const userAnswer = prompt(text);
+
+  // 1. Нажал "Отмена" (null) — прекращаем викторину
+  if (userAnswer === null) {
+    alert("Викторина прервана!");
+    break;
+  }
+
+  const cleanedInput = userAnswer.trim();
+
+  // 2. Ввёл пустую строку или не число — предупреждаем и повторно задаём этот же вопрос
+  if (cleanedInput === "" || isNaN(Number(cleanedInput))) {
+    alert("Некорректный ввод! Пожалуйста, введите номер ответа цифрой.");
+    i--; // Уменьшаем i, чтобы на следующей итерации цикла снова задать текущий вопрос
+    continue;
+  }
+
+  // 3. Проверяем правильность ответа
+  if (Number(cleanedInput) === quiz[i].correctAnswer) {
+    score++;
+  }
 }
 
-alert(`Правильных ответов: ${score} из ${quiz.length}`);
+alert(`Игра окончена! Правильных ответов: ${score} из ${quiz.length}`);
