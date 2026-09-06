@@ -1,6 +1,7 @@
 @charset "UTF-8";
 html {
   scroll-behavior: smooth;
+  transition: background-color 0.5s ease;
 }
 
 * {
@@ -11,6 +12,7 @@ html {
 
 body {
   font-family: "Montserrat", Arial, sans-serif;
+  transition: background-color 0.5s ease;
 }
 
 button, input, select, textarea {
@@ -72,6 +74,42 @@ button, input, select, textarea {
   font-weight: 600;
 }
 
+.ticker {
+  overflow: hidden;
+  background-color: #BCEC30;
+  padding: 16px 0;
+  width: 100%;
+}
+.ticker__wrapper {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  animation: ticker-scroll 20s linear infinite;
+}
+.ticker__list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-right: 24px;
+  list-style: none;
+  margin: 0;
+}
+.ticker__item {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #202027;
+  white-space: nowrap;
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 .button {
   text-decoration: none;
   display: inline-block;
@@ -411,9 +449,9 @@ button, input, select, textarea {
     margin-bottom: 32px;
   }
   .fist--mini-games {
-    top: 80px;
-    left: 105px;
-    width: 130px;
+    top: 70px;
+    left: 120px;
+    width: 150px;
   }
   .footer {
     padding: 40px 0;
