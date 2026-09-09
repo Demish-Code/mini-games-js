@@ -31,7 +31,41 @@
           <a href="#games" class="button">Поехали!</a>
         </div>
       </section>
-
+      <div class="ticker">
+        <div class="ticker__wrapper">
+          <!-- Два списка для бесконечной и плавной анимации -->
+          <!-- Первый список -->
+          <ul class="ticker__list">
+            <li class="ticker__item">Викторина</li>
+            <li class="ticker__item">✦</li>
+            <li class="ticker__item">Угадай число</li>
+            <li class="ticker__item">✦</li>
+            <li class="ticker__item">Переверни текст</li>
+            <li class="ticker__item">✦</li>
+            <li class="ticker__item">Простая арифметика</li>
+            <li class="ticker__item">✦</li>
+            <li class="ticker__item">Камень, ножницы, бумага</li>
+            <li class="ticker__item">✦</li>
+            <li class="ticker__item">Генератор случайных цветов</li>
+            <li class="ticker__item">✦</li>
+          </ul>
+          <!-- Второй точно такой же список -->
+          <ul class="ticker__list" aria-hidden="true">
+            <li class="ticker__item">Викторина</li>
+            <li class="ticker__item">✦</li>
+            <li class="ticker__item">Угадай число</li>
+            <li class="ticker__item">✦</li>
+            <li class="ticker__item">Переверни текст</li>
+            <li class="ticker__item">✦</li>
+            <li class="ticker__item">Простая арифметика</li>
+            <li class="ticker__item">✦</li>
+            <li class="ticker__item">Камень, ножницы, бумага</li>
+            <li class="ticker__item">✦</li>
+            <li class="ticker__item">Генератор случайных цветов</li>
+            <li class="ticker__item">✦</li>
+          </ul>
+        </div>
+      </div>
       <section class="games" id="games">
         <img src="./img/games-star-big.svg" class="games__star games__star--big" alt="" />
         <img src="./img/games-star-1.svg" class="games__star games__star--small-1" alt="" />
@@ -191,7 +225,7 @@
                 <div class="mini-games__info">
                   <h3 class="mini-games__card-title">Генератор случайных цветов</h3>
                   <p class="mini-games__description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                  <a href="#" class="button">Играть!</a>
+                  <button class="button" onclick="playRandomColor()">Играть</button>
                 </div>
               </article>
             </li>
@@ -208,5 +242,6 @@
     <script src="./games/arithmetic.js"></script>
     <script src="./games/reverse-text.js"></script>
     <script src="./games/rock-paper-scissors.js"></script>
+    <script src="./games/color-generator.js"></script>
   </body>
 </html>
