@@ -2,7 +2,7 @@
 
 Одностраничный адаптивный веб-сайт с 6 встроенными мини-играми, разработанный на чистом HTML, SCSS и JavaScript.
 
-🚀 **Демо проекта (Deploy):** https://demishkevichd-code.github.io/2-nd-course-hw/
+🚀 **Демо проекта (Deploy):** https://Demish-Code.github.io/mini-games-js/
 
 ## 🛠 Используемые технологии
 - **HTML5** (семантическая верстка)
